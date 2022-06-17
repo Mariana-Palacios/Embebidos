@@ -1,0 +1,17 @@
+// FONTS 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$BebasNeue: 'Bebas Neue', cursive;
+
+// COLORS
+$dark-blue:#033FFF;
+$blue: #4A9FF5;
+$aqua:#5FF4EE;
+$light-aqua:#C2FCF6;   
+
+.font-blue{
+    color: $dark-blue;
+}
+
+.font-m{
+    font-size: 2.5rem; //40px
+}

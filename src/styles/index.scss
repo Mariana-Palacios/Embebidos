@@ -1,0 +1,18 @@
+/*abstracts*/
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+/*base*/
+@import './base/base';
+@import './base/SVGComponent';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $BebasNeue;
+    @media screen and (max-width: 800px) {
+        font-size: 16px !important;
+    }
+}
+

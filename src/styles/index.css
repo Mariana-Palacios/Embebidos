@@ -1,0 +1,245 @@
+/*abstracts*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.font-blue {
+  color: #033FFF;
+}
+
+.font-m {
+  font-size: 2.5rem;
+}
+
+/*base*/
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-j-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-a-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-f-d-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.base-width {
+  width: 50%;
+  height: 100vh;
+}
+
+.base-width__blue {
+  background-color: #241E92;
+}
+
+@media screen and (max-width: 800px) {
+  .base-width {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
+.decoration {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .decoration {
+    opacity: 0;
+  }
+}
+
+.white {
+  color: #fff;
+}
+
+.font-blue {
+  color: #033FFF;
+}
+
+.font-m {
+  font-size: 2.5rem;
+}
+
+.SVG {
+  height: 300px;
+  width: 300px;
+  margin: 1.25rem 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .SVG {
+    width: 50%;
+    height: auto;
+  }
+}
+
+#termometro {
+  -webkit-filter: invert(15%) sepia(100%) saturate(5803%) hue-rotate(231deg) brightness(98%) contrast(108%);
+          filter: invert(15%) sepia(100%) saturate(5803%) hue-rotate(231deg) brightness(98%) contrast(108%);
+  -webkit-animation: flotate 15s infinite linear;
+          animation: flotate 15s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#level_1 {
+  -webkit-filter: invert(68%) sepia(89%) saturate(3569%) hue-rotate(187deg) brightness(99%) contrast(94%);
+          filter: invert(68%) sepia(89%) saturate(3569%) hue-rotate(187deg) brightness(99%) contrast(94%);
+  -webkit-animation: rotate 35s infinite linear;
+          animation: rotate 35s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#level_2 {
+  -webkit-filter: invert(89%) sepia(54%) saturate(900%) hue-rotate(147deg) brightness(100%) contrast(91%);
+          filter: invert(89%) sepia(54%) saturate(900%) hue-rotate(147deg) brightness(100%) contrast(91%);
+  -webkit-animation: rotaten 40s infinite linear;
+          animation: rotaten 40s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#level_3 {
+  -webkit-filter: invert(90%) sepia(31%) saturate(257%) hue-rotate(111deg) brightness(100%) contrast(98%);
+          filter: invert(90%) sepia(31%) saturate(257%) hue-rotate(111deg) brightness(100%) contrast(98%);
+  -webkit-animation: rotate 20s infinite linear;
+          animation: rotate 20s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes rotaten {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes rotaten {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg);
+  }
+}
+
+@-webkit-keyframes flotate {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  25% {
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+  }
+  50% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  75% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes flotate {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  25% {
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+  }
+  50% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  75% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 16px !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
